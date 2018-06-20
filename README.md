@@ -1,0 +1,2 @@
+# Distributed-File-System
+One client DFC(Distributed File Client) is uploading and downloading files onto and from 4 servers DFS1, DFS2, DFS3 and DFS4. The DFS servers are all running locally with different port numbers from 10001 to 10004. When DFC wants to uploa a file to the 4 DFS servers, it first split the file into 4 equal length pieces P1, P2, P3 and P4. Then the DFC groups the 4 pieces into 4 pairs(P1,P2), (P2,P3), (P3,P4), (P4,P1). At last the DFC uploads them onto 4 DFS servers. So now the file has redundancy, 1 failed server won't affect the integrity of the file.
